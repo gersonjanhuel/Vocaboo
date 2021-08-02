@@ -8,18 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		7C34576726B7E76B00514F00 /* VocabooApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34576626B7E76B00514F00 /* VocabooApp.swift */; };
-		7C34576926B7E76B00514F00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34576826B7E76B00514F00 /* ContentView.swift */; };
+		7C34576926B7E76B00514F00 /* TrendingVocabulariesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34576826B7E76B00514F00 /* TrendingVocabulariesView.swift */; };
 		7C34576B26B7E76D00514F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C34576A26B7E76D00514F00 /* Assets.xcassets */; };
 		7C34576E26B7E76D00514F00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C34576D26B7E76D00514F00 /* Preview Assets.xcassets */; };
+		7C34577826B7E8EB00514F00 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C34577726B7E8EB00514F00 /* CloudKit.framework */; };
+		7C34577A26B7F5F900514F00 /* MyVocabulariesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34577926B7F5F900514F00 /* MyVocabulariesView.swift */; };
+		7C34577E26B7FC5600514F00 /* TrendingVocab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34577D26B7FC5600514F00 /* TrendingVocab.swift */; };
+		7C34578126B7FD7400514F00 /* TrendingVocabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34578026B7FD7400514F00 /* TrendingVocabViewModel.swift */; };
+		7C34578426B81A0000514F00 /* Vocab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C34578226B81A0000514F00 /* Vocab.xcdatamodeld */; };
+		7C34578726B81A6900514F00 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34578626B81A6900514F00 /* PersistenceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C34576326B7E76B00514F00 /* Vocaboo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocaboo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C34576626B7E76B00514F00 /* VocabooApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabooApp.swift; sourceTree = "<group>"; };
-		7C34576826B7E76B00514F00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7C34576826B7E76B00514F00 /* TrendingVocabulariesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVocabulariesView.swift; sourceTree = "<group>"; };
 		7C34576A26B7E76D00514F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C34576D26B7E76D00514F00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C34576F26B7E76D00514F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C34577526B7E8E400514F00 /* Vocaboo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vocaboo.entitlements; sourceTree = "<group>"; };
+		7C34577726B7E8EB00514F00 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		7C34577926B7F5F900514F00 /* MyVocabulariesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVocabulariesView.swift; sourceTree = "<group>"; };
+		7C34577D26B7FC5600514F00 /* TrendingVocab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVocab.swift; sourceTree = "<group>"; };
+		7C34578026B7FD7400514F00 /* TrendingVocabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVocabViewModel.swift; sourceTree = "<group>"; };
+		7C34578326B81A0000514F00 /* Vocab.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vocab.xcdatamodel; sourceTree = "<group>"; };
+		7C34578626B81A6900514F00 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C34577826B7E8EB00514F00 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +52,7 @@
 			children = (
 				7C34576526B7E76B00514F00 /* Vocaboo */,
 				7C34576426B7E76B00514F00 /* Products */,
+				7C34577626B7E8EB00514F00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +67,12 @@
 		7C34576526B7E76B00514F00 /* Vocaboo */ = {
 			isa = PBXGroup;
 			children = (
+				7C34577526B7E8E400514F00 /* Vocaboo.entitlements */,
 				7C34576626B7E76B00514F00 /* VocabooApp.swift */,
-				7C34576826B7E76B00514F00 /* ContentView.swift */,
+				7C34578526B81A2000514F00 /* Core Data */,
+				7C34577F26B7FD2F00514F00 /* ViewModels */,
+				7C34577C26B7FC1E00514F00 /* Models */,
+				7C34577B26B7F79500514F00 /* Views */,
 				7C34576A26B7E76D00514F00 /* Assets.xcassets */,
 				7C34576F26B7E76D00514F00 /* Info.plist */,
 				7C34576C26B7E76D00514F00 /* Preview Content */,
@@ -67,6 +86,48 @@
 				7C34576D26B7E76D00514F00 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C34577626B7E8EB00514F00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C34577726B7E8EB00514F00 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C34577B26B7F79500514F00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C34576826B7E76B00514F00 /* TrendingVocabulariesView.swift */,
+				7C34577926B7F5F900514F00 /* MyVocabulariesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C34577C26B7FC1E00514F00 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C34577D26B7FC5600514F00 /* TrendingVocab.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C34577F26B7FD2F00514F00 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7C34578026B7FD7400514F00 /* TrendingVocabViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7C34578526B81A2000514F00 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				7C34578226B81A0000514F00 /* Vocab.xcdatamodeld */,
+				7C34578626B81A6900514F00 /* PersistenceController.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +199,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C34576926B7E76B00514F00 /* ContentView.swift in Sources */,
+				7C34578126B7FD7400514F00 /* TrendingVocabViewModel.swift in Sources */,
+				7C34578726B81A6900514F00 /* PersistenceController.swift in Sources */,
+				7C34577E26B7FC5600514F00 /* TrendingVocab.swift in Sources */,
+				7C34576926B7E76B00514F00 /* TrendingVocabulariesView.swift in Sources */,
 				7C34576726B7E76B00514F00 /* VocabooApp.swift in Sources */,
+				7C34577A26B7F5F900514F00 /* MyVocabulariesView.swift in Sources */,
+				7C34578426B81A0000514F00 /* Vocab.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Vocaboo/Vocaboo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Vocaboo/Preview Content\"";
 				DEVELOPMENT_TEAM = Y57LT3DKL7;
@@ -277,7 +344,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.elcodestudio.Vocaboo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elcodestudio.VocabooTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Vocaboo/Vocaboo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Vocaboo/Preview Content\"";
 				DEVELOPMENT_TEAM = Y57LT3DKL7;
@@ -299,7 +367,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.elcodestudio.Vocaboo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elcodestudio.VocabooTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,6 +396,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7C34578226B81A0000514F00 /* Vocab.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7C34578326B81A0000514F00 /* Vocab.xcdatamodel */,
+			);
+			currentVersion = 7C34578326B81A0000514F00 /* Vocab.xcdatamodel */;
+			path = Vocab.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7C34575B26B7E76B00514F00 /* Project object */;
 }
