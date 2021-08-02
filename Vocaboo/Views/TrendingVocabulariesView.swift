@@ -26,7 +26,12 @@ struct TrendingVocabulariesView: View {
             )
             .onAppear {
                 trendingVocabViewModel.fetchTrendingVocabs()
+                
+                trendingVocabViewModel.subscribeToCloudKitDatabase()
             }
+            .onReceive(NotificationCenter.default.publisher(for: .trendingUpdateNotification), perform: { _ in
+                trendingVocabViewModel.fetchTrendingVocabs()
+            })
         }
     }
 }

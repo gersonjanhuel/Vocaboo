@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C13FD4426B8336F009D09CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C13FD4326B8336F009D09CB /* AppDelegate.swift */; };
 		7C34576726B7E76B00514F00 /* VocabooApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34576626B7E76B00514F00 /* VocabooApp.swift */; };
 		7C34576926B7E76B00514F00 /* TrendingVocabulariesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34576826B7E76B00514F00 /* TrendingVocabulariesView.swift */; };
 		7C34576B26B7E76D00514F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C34576A26B7E76D00514F00 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C13FD4326B8336F009D09CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C34576326B7E76B00514F00 /* Vocaboo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocaboo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C34576626B7E76B00514F00 /* VocabooApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabooApp.swift; sourceTree = "<group>"; };
 		7C34576826B7E76B00514F00 /* TrendingVocabulariesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVocabulariesView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				7C34577526B7E8E400514F00 /* Vocaboo.entitlements */,
 				7C34576626B7E76B00514F00 /* VocabooApp.swift */,
+				7C13FD4326B8336F009D09CB /* AppDelegate.swift */,
 				7C34578526B81A2000514F00 /* Core Data */,
 				7C34577F26B7FD2F00514F00 /* ViewModels */,
 				7C34577C26B7FC1E00514F00 /* Models */,
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C13FD4426B8336F009D09CB /* AppDelegate.swift in Sources */,
 				7C34578126B7FD7400514F00 /* TrendingVocabViewModel.swift in Sources */,
 				7C34578726B81A6900514F00 /* PersistenceController.swift in Sources */,
 				7C34577E26B7FC5600514F00 /* TrendingVocab.swift in Sources */,

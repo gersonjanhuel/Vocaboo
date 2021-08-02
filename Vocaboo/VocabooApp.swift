@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct VocabooApp: App {
+    // our custom app delegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     private let persistenceController = PersistenceController.shared
     

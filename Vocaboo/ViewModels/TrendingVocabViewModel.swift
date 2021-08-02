@@ -29,4 +29,38 @@ class TrendingVocabViewModel: ObservableObject {
             }
         }
     }
+    
+    // subscribe to database change
+    func subscribeToCloudKitDatabase() {
+        let subscriptionID = "trending-vocab-list-updated"
+        let subscriptionSavedKey = "ckSubscriptionSaved"
+        
+        // Use a local flag to avoid saving the subscription more than once.
+        let alreadySaved = UserDefaults.standard.bool(forKey: subscriptionSavedKey)
+        guard !alreadySaved else {
+            return
+        }
+        
+        // create query subscription
+        let subscription = CKQuerySubscription(recordType: "TrendingVocab", predicate: NSPredicate(value: true), subscriptionID: subscriptionID, options: [.firesOnRecordCreation, .firesOnRecordDeletion, .firesOnRecordUpdate])
+        
+        // setup notification for silent push notification
+        let notification = CKSubscription.NotificationInfo()
+        notification.shouldSendContentAvailable = true
+        notification.category = "TrendingVocab"
+
+        subscription.notificationInfo = notification
+        
+        // create the subscription modification operation 
+        let operation = CKModifySubscriptionsOperation(subscriptionsToSave: [subscription], subscriptionIDsToDelete: [])
+        operation.modifySubscriptionsCompletionBlock = { (_, _, error) in
+            guard error == nil else { return }
+            
+            // success, then save to User Default
+            UserDefaults.standard.set(true, forKey: subscriptionSavedKey)
+        }
+        operation.qualityOfService = .utility
+            
+        database.add(operation)
+    }
 }
